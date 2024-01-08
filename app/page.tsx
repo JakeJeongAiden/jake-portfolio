@@ -1,8 +1,11 @@
-import Intro from "@/components/intro";
-import SectionDivider from "@/components/section-divider";
-import About from "@/components/about";
-import Projects from "@/components/projects";
-import ProjectsAlt from "@/components/projects-alt";
+import Intro from "@/app/components/intro";
+import SectionDivider from "@/app/components/section-divider";
+import About from "@/app/components/about";
+import Projects from "@/app/components/projects";
+import ProjectsAlt from "@/app/components/projects-alt";
+import Skills from "@/app/components/skills";
+import Experience from "@/app/components/experience";
+import Contact from "@/app/components/contact";
 
 export default function Home() {
   return (
@@ -15,7 +18,9 @@ export default function Home() {
       <About />
 
       <ProjectsAlt />
-      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
     </main>
   );
 }

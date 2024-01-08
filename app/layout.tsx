@@ -1,7 +1,7 @@
 /* NOTE
  Creating a portfolio website on layout.tsx without creating folder for each page is fine.
 */
-import Header from "@/components/header";
+import Header from "@/app/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -27,10 +27,10 @@ export default function RootLayout({
     // ! for importance, scroll-smooth for smooth scrolling
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`bg-zinc-50 text-zinc-950 ${myFont.className} h-[5000px] pt-28 sm:pt-36`}
+        className={`bg-zinc-50 text-zinc-950 ${myFont.className} pt-28 sm:pt-36`}
       >
         {/* Left & Right side of the element. */}
-        <div className="absolute inset-0 h-[5000px] w-full -z-10 bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        <div className="absolute inset-0 h-[6000px] w-full -z-10 bg-white bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
         <div className="bg-[#e4e4e7] absolute top-[-1rem] -z-10 opacity-50 left-[-39rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[15rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
 
         <ActiveSectionContextProvider>

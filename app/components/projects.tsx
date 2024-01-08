@@ -5,7 +5,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/app/components/ui/carousel";
 import {
   Card,
   CardContent,
@@ -13,9 +13,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { projectsData } from "@/lib/data";
-import SectionHeading from "@/components/section-heading";
+} from "@/app/components/ui/card";
+import { projectsData } from "@/app/lib/data";
+import SectionHeading from "@/app/components/section-heading";
 
 export default function Projects() {
   return (

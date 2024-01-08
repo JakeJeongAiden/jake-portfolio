@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useState, createContext, useContext } from "react";
-import { SectionName } from "@/lib/types";
+import { SectionName } from "@/app/lib/types";
 
 // Takes link and could be any of them([number])
 

@@ -1,7 +1,7 @@
 "use client";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
+import { useSectionInView } from "@/app/lib/hooks";
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.5);

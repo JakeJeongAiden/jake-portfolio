@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import SectionHeading from "./section-heading";
-import { projectsData } from "@/lib/data";
+import { projectsData } from "@/app/lib/data";
 import Project from "./project";
 
-import { useSectionInView } from "@/lib/hooks";
+import { useSectionInView } from "@/app/lib/hooks";
 
 // makes typing easier. This is the type of the first element in the array.
 // This is as as specific as we can get.
@@ -15,7 +15,7 @@ export default function ProjectsAlt() {
 
   //Copy above ===============================
   return (
-    <section ref={ref} id="projects" className="scroll-mt-[7rem]">
+    <section ref={ref} id="projects" className="scroll-mt-[7rem] mb-28">
       <SectionHeading>My Projects</SectionHeading>
 
       <div

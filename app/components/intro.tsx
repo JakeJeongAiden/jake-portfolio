@@ -7,10 +7,12 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
+import { useSectionInView } from "@/app/lib/hooks";
+import { useActiveSectionContext } from "@/app/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -84,6 +86,10 @@ export default function Intro() {
           href="#contact"
           // active:scale-105 to make it look like it's being pressed.
           className="group bg-zinc-900 text-zinc-50 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-zinc-950 active:scale-105 transition cursor-pointer"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           {/* de-emphasizing icons next to texts */}
           Contact Me Here{" "}
