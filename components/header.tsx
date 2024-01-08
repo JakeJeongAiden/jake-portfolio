@@ -6,8 +6,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data"; //@ is an alias for the root directory.
 import Link from "next/link";
+import { clsx } from "clsx";
+import { useActiveSectionContext } from "@/app/context/active-section-context";
 
 export default function Header() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
     // Motions are used to animate elements. For functional components, we use motion.nav. For background, we use motion.div.
     <header className="z-[999] relative">
@@ -36,10 +41,36 @@ export default function Header() {
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition"
+                // Link is a component from next.js. It's similar to <a> tag.
+                // className="flex w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition"
+                // Wrap {} around template literal [``].
+                className={clsx(
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition",
+                  {
+                    "text-slate-950": activeSection === link.name,
+                  }
+                )}
+                //this is how we link to a section in the same page.
                 href={link.hash}
+                // This is how we change the active section.
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
               >
                 {link.name}
+                {link.name === activeSection && (
+                  // This is the underline for the active section. (conditional rendering)
+                  <motion.span
+                    className="bg-zinc-200 rounded-full absolute inset-0 -z-10"
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
           ))}

@@ -1,9 +1,23 @@
 "use client";
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
+  const { ref } = useSectionInView("About", 0.5);
+
   return (
-    <section className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40">
+    <motion.section
+      id="about"
+      ref={ref}
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      //scroll-mt means the element will scroll up to the margin
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40
+      scroll-mt-[7rem]
+      "
+    >
       <h2 className="text-zinc-800 text-3xl font-medium capitalize mb-8 drop-shadow-md">
         <Typewriter
           options={{
@@ -44,6 +58,6 @@ export default function About() {
         delectus iusto minus. Minima iusto temporibus inventore eius unde
         necessitatibus atque fugit itaque.
       </p>
-    </section>
+    </motion.section>
   );
 }
