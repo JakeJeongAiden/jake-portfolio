@@ -1,7 +1,8 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuGraduationCap, LuCross } from "react-icons/lu";
+
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -35,20 +36,20 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated University of California, Riverside",
-    location: "Riverside, CA",
+    title: "Veteran",
+    location: "U.S. Army",
     description:
-      "I have a bachelor's degree in Economics. I'm skilled in financial analysis and game theory.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2023",
+      "I was a combat medic in the US Army. I served for 18 months and honorably discharged from service.",
+    icon: React.createElement(LuCross),
+    date: "2017-2018",
   },
   {
-    title: "Front-End Developer",
-    location: "Irvine, CA",
+    title: "Graduated University of California",
+    location: "Riverside, CA",
     description:
-      "I have a year of front-end experience. I have experiences with React, TypeScript, Redux, Tailwind and Framer Motion.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2023 - 2024",
+      "I have a bachelor of arts in Economics. I studied game theory, econometrics, and financial analysis.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019 - 2023",
   },
   {
     title: "Full-Stack Developer",

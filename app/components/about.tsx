@@ -18,7 +18,7 @@ export default function About() {
       scroll-mt-[7rem]
       "
     >
-      <h2 className="text-zinc-800 text-3xl font-medium capitalize mb-8 drop-shadow-md">
+      <h2 className="text-zinc-800 text-3xl font-medium capitalize mb-8 drop-shadow-md dark:text-zinc-100">
         <Typewriter
           options={{
             strings: ["About", "Me"],
@@ -41,13 +41,9 @@ export default function About() {
         />
       </h2>
       <p className="mb-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
-        animi voluptatem ullam quidem hic, enim vitae sunt nihil ad quo alias
-        aliquam voluptatibus dolores modi autem. Quidem fugiat ea accusamus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        obcaecati alias quibusdam officia consequuntur sunt magnam voluptatibus
-        delectus iusto minus. Minima iusto temporibus inventore eius unde
-        necessitatibus atque fugit itaque.
+        I'm a fullstack software engineer with background in economics and
+        finances. I'm passionate about building projects that solve real world
+        problems and make people's lives easier.
       </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,

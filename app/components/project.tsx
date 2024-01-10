@@ -38,16 +38,18 @@ export default function Project({
     >
       <article
         // We need to pass the ref to the element we want to animate.
-        className="relative bg-zinc-100 max-w-[42rem] borderBlack rounded-lg overflow-hidden sm:pr-8 sm:h-[20rem] mb-3   hover:bg-zinc-200 transition group:even:pl-8"
+        className="relative bg-zinc-100 max-w-[42rem] borderBlack rounded-lg overflow-hidden sm:pr-8 sm:h-[20rem] mb-3   hover:bg-zinc-200 transition sm:group:even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
       >
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem] ">
+        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-zinc-700 ">{description}</p>
+          <p className="mt-2 leading-relaxed text-zinc-700 dark:text-white/70">
+            {description}
+          </p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
                 // tracking-wider means letter spacing.
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wide text-zinc-50 rounded-full "
+                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wide text-zinc-50 rounded-full dark:text-white/70"
                 key={index}
               >
                 {tag}
@@ -60,7 +62,7 @@ export default function Project({
         <Image
           // rounded-t-lg makes rounded top.
           // Tailwind also gives us pseudo classes like even and odd. 'group-even' means even index.
-          className="absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2x1
+          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2x1
         transition 
         group-hover:scale-105
         group-hover:-translate-x-3

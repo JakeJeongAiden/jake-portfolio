@@ -1,18 +1,19 @@
+// NOTE:
+// This is where also server components meet client components.
 "use client";
 import React from "react";
 import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
+import { sendEmail } from "@/app/actions/sendEmail"; //server component
+import { useFormStatus } from "react-dom";
+import SubmitBtn from "./submit-btn";
+import toast from "react-hot-toast";
+
 export default function Contact() {
   const { ref } = useSectionInView("Contact", 0.6);
-
-  const sendEmail = async (formData: FormData) => {
-    "use server";
-    console.log("Running on server");
-    console.log(formData.get("senderEmail"));
-    console.log(formData.get("message"));
-  };
+  const { pending } = useFormStatus();
 
   return (
     <motion.section
@@ -30,7 +31,7 @@ export default function Contact() {
       <SectionHeading>Contact Me</SectionHeading>
       <p
         // -mt is a dirty trick to move the element up. It is a negative margin top.
-        className="text-zinc-700 -mt-4"
+        className="text-zinc-700 -mt-6 dark:text-white/80"
       >
         Please contact me directly at{" "}
         <a className="underline" href="mailto:jake.y.jeong.dev@gmail.com">
@@ -40,15 +41,21 @@ export default function Contact() {
       </p>
 
       <form
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          await sendEmail(formData);
+          const { data, error } = await sendEmail(formData);
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Email sent successfully!");
         }}
       >
         {/* input for one line form. Textarea for multiple line form */}
         <input
           // px-4 padding horizontal 4.
-          className="h-14 px-4 rounded-lg borderBlack"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -56,20 +63,12 @@ export default function Contact() {
           maxLength={500}
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          cols={30}
-          rows={10}
           required
-          maxLength={500}
+          maxLength={5000}
         ></textarea>
-        <button
-          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-zinc-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-zinc-100 hover:text-zinc-900 active:scale-105"
-          type="submit"
-        >
-          Submit{" "}
-          <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </button>
+        <SubmitBtn />
       </form>
     </motion.section>
   );

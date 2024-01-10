@@ -33,7 +33,7 @@ export default function Skills() {
           <motion.li
             //variants is framer motion property that can use extracted property.
             variants={fadeInAnimationVariants}
-            className="bg-white borderBlack rounded-xl px-5 py-3"
+            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
             initial="initial"
             //whileInView is framer motion property will allow animation to happen when in view.

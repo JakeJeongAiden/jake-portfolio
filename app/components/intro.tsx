@@ -32,18 +32,18 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              alt="Ricardo portrait"
-              width="192"
-              height="192"
+              src="/profile-picture.jpg"
+              alt="Jake Jeong's Portrait picture"
+              width="500"
+              height="500"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
-          <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+          {/* <motion.span
+            className="absolute bottom-0 right-0 text-1xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             // transition is optional but it's recommended to use it for better user experience.
@@ -56,7 +56,7 @@ export default function Intro() {
             }}
           >
             👋
-          </motion.span>
+          </motion.span> */}
         </div>
       </div>
 
@@ -65,15 +65,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <p className="font-bold uppercase leading-10 text-4xl text-zinc-400">
+        <p className="font-bold uppercase leading-10 text-4xl text-zinc-400 dark:text-gray-950 mb-2">
           Jake Jeong
         </p>{" "}
-        <span>A </span>
+        <span>Hello, I&apos;m a </span>
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">experiences </span> in{" "}
         <span className="font-bold underline">Next.js</span>,{" "}
-        <span className="font-bold underline">Javascript</span>,{" "}
-        <span className="font-bold underline">TailwindCSS</span>,{" "}
+        <span className="font-bold underline">Typescript</span>,{" "}
+        <span className="font-bold underline">TailwindCSS</span>.{" "}
       </motion.h1>
 
       <motion.div
@@ -85,7 +85,7 @@ export default function Intro() {
         <Link
           href="#contact"
           // active:scale-105 to make it look like it's being pressed.
-          className="group bg-zinc-900 text-zinc-50 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-zinc-950 active:scale-105 transition cursor-pointer"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -100,7 +100,7 @@ export default function Intro() {
           // in nextjs you can use /public folder to store static files.
           href="/CV.pdf"
           download
-          className="group bg-zinc-100 text-zinc-900 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-zinc-100 active:scale-105 transition cursor-pointer border-black/20"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -110,14 +110,14 @@ export default function Intro() {
         <a
           href="https://www.linkedin.com/in/jake-jeong-801438148/"
           target="_blank"
-          className="bg-zinc-100 text-zinc-700 p-4 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-zinc-100 hover:text-zinc-900 active:scale-105 transition cursor-pointer border-black/20"
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/80"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/JakeJeongAiden"
           target="_blank"
-          className="bg-zinc-100 text-zinc-700 p-4 flex items-center gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-zinc-900  hover:bg-zinc-100 active:scale-105 transition cursor-pointer border-black/20"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/80"
         >
           <FaGithubSquare />
         </a>
