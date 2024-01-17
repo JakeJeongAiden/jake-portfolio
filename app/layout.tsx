@@ -14,7 +14,98 @@ import ThemeContextProvider from "./context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 const myFont = localFont({
-  src: "../public/fonts/Metropolis-Regular.woff2",
+  src: [
+    {
+      path: "../public/fonts/Metropolis-Thin.woff2",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Metropolis-ThinItalic.woff2",
+      weight: "100",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/Metropolis-ExtraLight.woff2",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Metropolis-ExtraLightItalic.woff2",
+      weight: "200",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/Metropolis-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Metropolis-LightItalic.woff2",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/Metropolis-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Metropolis-RegularItalic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/Metropolis-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Metropolis-MediumItalic.woff2",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/Metropolis-SemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Metropolis-SemiBoldItalic.woff2",
+      weight: "600",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/Metropolis-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Metropolis-BoldItalic.woff2",
+      weight: "700",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/Metropolis-ExtraBold.woff2",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Metropolis-ExtraBoldItalic.woff2",
+      weight: "800",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/Metropolis-Black.woff2",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Metropolis-BlackItalic.woff2",
+      weight: "900",
+      style: "italic",
+    },
+  ],
 });
 
 export const metadata = {

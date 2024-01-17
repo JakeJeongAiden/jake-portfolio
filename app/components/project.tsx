@@ -41,7 +41,7 @@ export default function Project({
         className="relative bg-zinc-100 max-w-[42rem] borderBlack rounded-lg overflow-hidden sm:pr-8 sm:h-[20rem] mb-3   hover:bg-zinc-200 transition sm:group:even:pl-8 dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
       >
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] ">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <h3 className="text-2xl font-regular">{title}</h3>
           <p className="mt-2 leading-relaxed text-zinc-700 dark:text-white/70">
             {description}
           </p>
