@@ -63,10 +63,10 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Event Demo",
     description:
       "Users can give public feedback to companies. lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
   },
   {

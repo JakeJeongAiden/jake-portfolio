@@ -41,7 +41,7 @@ export default function About() {
         />
       </h2>
       <p className="mb-3">
-        I'm a fullstack software engineer with background in economics and
+        I&rsquo;m a fullstack software engineer with background in economics and
         finances. I&apos;m passionate about building projects that solve real
         world problems and make people&apos;s lives easier. I love learning new
         technologies and latest trends in the industry.
