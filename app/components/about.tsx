@@ -42,8 +42,9 @@ export default function About() {
       </h2>
       <p className="mb-3">
         I'm a fullstack software engineer with background in economics and
-        finances. I'm passionate about building projects that solve real world
-        problems and make people's lives easier.
+        finances. I&apos;m passionate about building projects that solve real
+        world problems and make people&apos;s lives easier. I love learning new
+        technologies and latest trends in the industry.
       </p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,

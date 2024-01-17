@@ -10,6 +10,10 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/app/lib/hooks";
 import { useActiveSectionContext } from "@/app/context/active-section-context";
 
+/* ================= Note =================
+
+*/
+
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -68,7 +72,7 @@ export default function Intro() {
         <p className="font-bold uppercase leading-10 text-4xl text-zinc-400 dark:text-gray-950 mb-2">
           Jake Jeong
         </p>{" "}
-        <span>Hello, I&apos;m a </span>
+        <span>Hello, I`&apos;m a </span>
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">experiences </span> in{" "}
         <span className="font-bold underline">Next.js</span>,{" "}

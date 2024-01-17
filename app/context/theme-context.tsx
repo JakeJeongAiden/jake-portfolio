@@ -3,6 +3,7 @@ import { type } from "os";
 import React from "react";
 import { createContext, useState, useEffect } from "react";
 
+
 type Theme = "light" | "dark";
 
 type ThemeContextProviderProps = {
