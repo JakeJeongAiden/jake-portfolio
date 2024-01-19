@@ -71,8 +71,10 @@ export default function Intro() {
           animate={{ opacity: 1, y: 0 }}
         >
           <MaskContainer
+            size={20}
+            //
             revealText={
-              <p className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold">
+              <p className=" mx-auto text-slate-800 text-center  text-4xl font-bold">
                 <span className="font-extrabold tracking-tight leading-10 text-4xl sm:text-8xl text-zinc-200 dark:text-gray-950 mb-2">
                   Jake Jeong
                 </span>{" "}
@@ -82,8 +84,18 @@ export default function Intro() {
                 </span>
               </p>
             }
-            className="h-[10rem] border rounded-md"
-          ></MaskContainer>
+            className="h-[30rem] border border-black/0 rounded-md"
+          >
+            <p className="flexjustify-start mx-auto text-slate-800 text-center  text-4xl font-bold">
+              <span className="font-extrabold tracking-tight leading-10 text-4xl sm:text-8xl text-zinc-200 dark:text-gray-950 mb-2">
+                Jake Jeong
+              </span>{" "}
+              <span className="font-light pl-2 ">.</span>
+              <span className="tracking-wide font-semibold text-lg sm:text-2xl pr-44 leading-1">
+                A Full-Stack Developer
+              </span>
+            </p>
+          </MaskContainer>
         </motion.h1>
 
         <motion.div
@@ -122,7 +134,7 @@ export default function Intro() {
 
         <a
           // in nextjs you can use /public folder to store static files.
-          href="/CV.pdf"
+          href="/cv.pdf"
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10"
         >
