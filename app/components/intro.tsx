@@ -9,6 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/app/lib/hooks";
 import { useActiveSectionContext } from "@/app/context/active-section-context";
+import { MaskContainer } from "@/app/components/ui/svg-mask-effect";
 
 /* ================= Note =================
 
@@ -22,7 +23,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -63,22 +64,40 @@ export default function Intro() {
           </motion.span> */}
         </div>
       </div>
+      <section className="flex flex-col">
+        <motion.h1
+          className="flex justify-start items-baseline mt-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <MaskContainer
+            revealText={
+              <p className="max-w-4xl mx-auto text-slate-800 text-center  text-4xl font-bold">
+                <span className="font-extrabold tracking-tight leading-10 text-4xl sm:text-8xl text-zinc-200 dark:text-gray-950 mb-2">
+                  Jake Jeong
+                </span>{" "}
+                <span className="font-light pl-2 ">.</span>
+                <span className="tracking-wide font-semibold text-lg sm:text-2xl pr-44 leading-1">
+                  A Full-Stack Developer
+                </span>
+              </p>
+            }
+            className="h-[10rem] border rounded-md"
+          ></MaskContainer>
+        </motion.h1>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <p className="font-bold uppercase leading-10 text-4xl text-zinc-400 dark:text-gray-950 mb-2">
-          Jake Jeong
-        </p>{" "}
-        <span>Hello, I&apos;m a </span>
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">experiences </span> in{" "}
-        <span className="font-bold underline">Next.js</span>,{" "}
-        <span className="font-bold underline">Typescript</span>,{" "}
-        <span className="font-bold underline">TailwindCSS</span>.{" "}
-      </motion.h1>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          className="flex justify-end mt-6 pb-36 text-md font-thin !leading-[1.5] sm:text-xl "
+        >
+          <span className="">creative and experienced with</span>{" "}
+          <span className="font-normal">Next.js</span>,{" "}
+          <span className="font-normal ">Typescript</span>,{" "}
+          <span className="font-normal ">TailwindCSS</span>.{" "}
+          <span className="font-thin ">and more...</span>.{" "}
+        </motion.div>
+      </section>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -100,6 +119,7 @@ export default function Intro() {
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         {/* Using anchor tag because we are downloading something */}
+
         <a
           // in nextjs you can use /public folder to store static files.
           href="/CV.pdf"

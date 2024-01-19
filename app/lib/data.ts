@@ -39,15 +39,15 @@ export const experiencesData = [
     title: "Veteran",
     location: "U.S. Army",
     description:
-      "I was a combat medic in the US Army. I served for 18 months and honorably discharged from service.",
+      "I was a combat medic specialist in the U.S. Army. I served for 18 months and honorably discharged from service.",
     icon: React.createElement(LuCross),
     date: "2017-2018",
   },
   {
-    title: "Graduated University of California",
+    title: "Bachelor of Arts Economics. University of California",
     location: "Riverside, CA",
     description:
-      "I have a bachelor of arts in Economics. I studied game theory, econometrics, and financial analysis.",
+      "I have a bachelor of arts in Economics. I studied game theory, econometrics, stock market and financial analysis.",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2023",
   },
@@ -55,7 +55,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Irvine, CA",
     description:
-      "I'm now a full-stack developer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and PostgreSQL. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2023 - 2024",
   },
@@ -63,9 +63,9 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Event Demo",
+    title: "Anime Convention Event Demo",
     description:
-      "Users can give public feedback to companies. lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      "Users can search for anime conventions and events in Southern California.",
     tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
   },

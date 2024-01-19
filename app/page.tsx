@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main
       // flex-col because we want to stack the elements vertically.
-      className="flex flex-col items-center px-4"
+      className="flex flex-col items-center"
     >
       <Intro />
       <SectionDivider />
