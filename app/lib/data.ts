@@ -32,6 +32,10 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
+  {
+    name: "Resume",
+    hash: "#resume",
+  },
 ] as const;
 
 export const experiencesData = [
@@ -101,11 +105,8 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
 ] as const;

@@ -10,6 +10,7 @@ import { sendEmail } from "@/app/actions/sendEmail"; //server component
 import { useFormStatus } from "react-dom";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import ResumeBtn from "./resume-btn";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact", 0.6);
@@ -68,7 +69,10 @@ export default function Contact() {
           required
           maxLength={5000}
         ></textarea>
-        <SubmitBtn />
+        <div className="flex justify-between">
+          <SubmitBtn />
+          <ResumeBtn />
+        </div>
       </form>
     </motion.section>
   );

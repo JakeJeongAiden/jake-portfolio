@@ -8,20 +8,20 @@ fixed bottom-5 right-5 bt-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0
 
 export default function SocialButtons() {
   return (
-    <div className="fixed flex bottom-7 right-8 items-center gap-3  text-zinc-700/90">
+    <div className="fixed flex bottom-7 right-8 items-center gap-3  text-cyan-100/70">
       {/* Using anchor tag because we are navigating to actual link */}
 
       <a
         href="https://www.linkedin.com/in/jake-jeong-801438148/"
         target="_blank"
-        className="text-[1.35rem]"
+        className="text-[1.73rem]"
       >
         <BsLinkedin />
       </a>
       <a
         href="https://github.com/JakeJeongAiden"
         target="_blank"
-        className="text-[1.5rem] "
+        className="text-[2rem] "
       >
         <FaGithubSquare />
       </a>
