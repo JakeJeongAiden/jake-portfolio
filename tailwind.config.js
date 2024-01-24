@@ -7,6 +7,7 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
+  //prefixes are added to all classes, so you can use them in your components
   prefix: "",
   theme: {
     container: {
