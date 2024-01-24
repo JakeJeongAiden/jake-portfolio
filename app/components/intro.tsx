@@ -86,9 +86,9 @@ export default function Intro() {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: "easeOut", delay: 0.05 }}
-          className="flex justify-end mr-12 mt-6 pb-10 text-md font-thin !leading-[1.5] sm:text-xl text-zinc-800"
+          className="flex justify-end mr-12 mt-6 pb-10 text-md font-extralight !leading-[1.5] sm:text-xl text-zinc-800"
         >
-          <div className="border-l-4 border-black/10 rounded leading-7 text-base text-wrap">
+          <div className="border-l-4 border-black/10 rounded leading-7 text-wrap">
             <p className="pl-3">
               <span className="">
                 Hello! I am a web developer based in California, United States.
@@ -121,13 +121,13 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="group bg-[#8fb996] text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className="group bg-[hsl(338.69 100% 48.04%)] text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-lime-300 active:scale-105 transition"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
             }}
           >
-            Contact me here{" "}
+            Contact Me!{" "}
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
           {/* Using anchor tag because we are downloading something */}
@@ -136,26 +136,10 @@ export default function Intro() {
             // in nextjs you can use /public folder to store static files.
             href="/cv-a.pdf"
             download
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10"
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-stone-600/90"
           >
             Download CV{" "}
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-          </a>
-          {/* Using anchor tag because we are navigating to actual link */}
-
-          <a
-            href="https://www.linkedin.com/in/jake-jeong-801438148/"
-            target="_blank"
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/80"
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            href="https://github.com/JakeJeongAiden"
-            target="_blank"
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white/80"
-          >
-            <FaGithubSquare />
           </a>
         </motion.div>
       </section>
