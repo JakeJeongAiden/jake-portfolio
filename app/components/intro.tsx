@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { SlArrowDown } from "react-icons/sl";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -68,7 +68,7 @@ export default function Intro() {
           </div>
         </div>
         <motion.h1
-          className="flex justify-center items-baseline mt-[6rem] mb-[6rem] sm:mb-[3rem] text-2xl font-medium !leading-[1.5] sm:text-4xl"
+          className="flex justify-center items-baseline mt-[14rem] mb-[6rem] sm:mb-[3rem] text-2xl font-medium !leading-[1.5] sm:text-4xl"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ ease: "easeOut" }}
@@ -142,6 +142,10 @@ export default function Intro() {
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
           </a>
         </motion.div>
+
+        <div className="text-white left-1/2">
+          <SlArrowDown />
+        </div>
       </section>
     </>
   );
