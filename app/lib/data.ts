@@ -5,7 +5,7 @@ import { LuGraduationCap, LuCross } from "react-icons/lu";
 
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-import animeEvent from "@/public/animeevent.png";
+import animeEvent from "@/public/anime-event.png";
 
 export const links = [
   {
