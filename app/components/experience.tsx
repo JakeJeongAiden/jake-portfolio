@@ -50,7 +50,9 @@ export default function Experience() {
               <h3 className="font-semibold capitalize">
                 {experienceItem.title}
               </h3>
-              <p className="font-normal !mt-0">{experienceItem.location}</p>
+              <p className="font-normal text-zinc-500 !mt-0">
+                {experienceItem.location}
+              </p>
               <p className="!mt-1 !font-normal text-zinc-700 dark:text-white/75">
                 {experienceItem.description}
               </p>

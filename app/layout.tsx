@@ -11,6 +11,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "./components/footer";
 import ThemeSwitch from "./components/theme-switch";
 import ThemeContextProvider from "./context/theme-context";
+import SocialButtons from "./components/social-buttons";
 
 const inter = Inter({ subsets: ["latin"] });
 const myFont = localFont({
@@ -136,6 +137,7 @@ export default function RootLayout({
             <Toaster position="top-right" />
 
             <ThemeSwitch />
+            <SocialButtons />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>

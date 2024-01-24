@@ -11,6 +11,7 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
   // safer to use useEffect and nest the setActiveSection inside.
+  //This is to prevent header highlight bouncing by delaying the setActiveSection.
   useEffect(() => {
     if (inView && Date.now() - timeOfLastClick > 1000) {
       setActiveSection(sectionName);

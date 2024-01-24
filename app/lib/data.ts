@@ -3,9 +3,9 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap, LuCross } from "react-icons/lu";
 
-import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import animeEvent from "@/public/animeevent.png";
 
 export const links = [
   {
@@ -67,7 +67,8 @@ export const projectsData = [
     description:
       "Users can search for anime conventions and events in Southern California.",
     tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl: animeEvent,
+    projectUrl: "https://event-jake.vercel.app",
   },
   {
     title: "rmtDev",
@@ -75,6 +76,7 @@ export const projectsData = [
       "lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
+    projectUrl: "https://event-jake.vercel.app",
   },
   {
     title: "Word Analytics",
@@ -82,6 +84,7 @@ export const projectsData = [
       "lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    projectUrl: "https://event-jake.vercel.app",
   },
 ] as const;
 

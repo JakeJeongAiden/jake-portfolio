@@ -27,7 +27,7 @@ export default function About() {
           }}
           onInit={(typewriter) => {
             typewriter
-              .typeString("About me")
+              .typeString("About Me")
               .callFunction(() => {
                 console.log("String typed out!");
               })
@@ -41,20 +41,14 @@ export default function About() {
         />
       </h2>
       <p className="mb-3">
-        I&rsquo;m a fullstack software engineer with background in economics and
-        finances. I&apos;m passionate about building projects that solve real
-        world problems and make people&apos;s lives easier. I love learning new
-        technologies and latest trends in the industry.
+        I&rsquo;m a veteran and a fullstack software engineer with background in
+        economics and finances. I found a strong passion for coding while in
+        college and decided to pursue a career in software engineering. I
+        believe in minimalism, simplicity, and clean code. I am a strong
+        believer in the power of teamwork and collaboration. I am a fast learner
+        and I am always looking to improve my skills.
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
-        animi voluptatem ullam quidem hic, enim vitae sunt nihil ad quo alias
-        aliquam voluptatibus dolores modi autem. Quidem fugiat ea accusamus.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        obcaecati alias quibusdam officia consequuntur sunt magnam voluptatibus
-        delectus iusto minus. Minima iusto temporibus inventore eius unde
-        necessitatibus atque fugit itaque.
-      </p>
+      <p></p>
     </motion.section>
   );
 }
