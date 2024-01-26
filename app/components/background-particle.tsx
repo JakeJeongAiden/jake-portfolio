@@ -41,7 +41,7 @@ export function Background() {
         zIndex: -1,
       },
       style: {
-        height: "100%",
+        height: "150%",
         width: "100%",
         position: "absolute",
       },
@@ -117,7 +117,7 @@ export function Background() {
           distance: 150,
           enable: false,
           opacity: 0.3,
-          width: 1,
+          width: 0.7,
         },
         move: {
           direction: "top",

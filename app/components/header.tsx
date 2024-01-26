@@ -18,7 +18,7 @@ export default function Header() {
     <header className="z-[999] relative">
       <motion.div
         //`left-1/2 -translate-x-1/2`. This is a css trick to center the element.
-        className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border border-white/40 bg-zinc-100/35 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[2.4rem] sm:w-[41rem] sm:rounded-full dark:bg-slate-700 dark:border-black/40 dark:bg-opacity-75"
+        className="fixed top-0 left-1/2 -translate-x-1/2 h-[4.5rem] w-full rounded-none border border-white/40 bg-zinc-100/35 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[2.4rem] sm:w-[35rem] sm:rounded-full dark:bg-slate-700 dark:border-black/40 dark:bg-opacity-75"
         // Initial position of the element should sit -100: starts at 100 pixels higher.
         // x:"-50%" centers the element since framer-motion overwrites the css property.
         initial={{ y: -100, x: "-50%", opacity: 0 }}
@@ -31,10 +31,10 @@ export default function Header() {
         className="flex fixed top-[0.15rem] left-1/2 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0"
       >
         {/* These are links inside the nav */}
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] my-[-7px] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5 ">
+        <ul className="flex w-[24rem] flex-wrap items-center justify-center px-3 sm:px-0 gap-y-0 sm:gap-y-1 text-[0.9rem] my-[-7px] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5 ">
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center relative"
+              className="sm:h-3/4 flex items-center justify-center relative"
               key={link.hash}
               // Similar to keyframe 0%
               initial={{ y: -100, opacity: 0 }}
@@ -44,7 +44,7 @@ export default function Header() {
                 // Link is a component from next.js. It's similar to <a> tag. We use link instead of <a> tag because it's faster and it's better for SEO.
                 // Wrap {} around template literal [``].
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition dark:text-zinc-500 dark:hover:text-zinc-300",
+                  "flex w-full items-center justify-center px-3 pt-2 sm:py-3 hover:text-slate-950 transition dark:text-zinc-500 dark:hover:text-zinc-300",
                   {
                     "text-zinc-900": activeSection === link.name,
                   }
@@ -53,21 +53,15 @@ export default function Header() {
                 href={link.hash}
                 // This is how we change the active section.
                 onClick={() => {
-                  if (link.name === "Resume") {
-                    window.open(
-                      "https://drive.google.com/file/d/1MOqCHO2vJd-Bf6Znj1TYp401ljZyZZoP/view?usp=sharing"
-                    );
-                  } else {
-                    setActiveSection(link.name);
-                    setTimeOfLastClick(Date.now());
-                  }
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
                 }}
               >
                 {link.name}
                 {link.name === activeSection && (
                   // This is the underline for the active section. (conditional rendering)
                   <motion.span
-                    className="h-7  bg-zinc-200 rounded-full absolute inset-[0.15rem] -z-10 dark:bg-zinc-800"
+                    className="h-6 sm:h-7 bg-zinc-200 rounded-full absolute inset-[0.40rem] sm:inset-[0.155rem] -z-10 dark:bg-zinc-800"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",
