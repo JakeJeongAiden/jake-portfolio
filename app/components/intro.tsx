@@ -12,6 +12,7 @@ import { useActiveSectionContext } from "@/app/context/active-section-context";
 import { PiPhoneThin } from "react-icons/pi";
 import { Background } from "./background-particle";
 import { IoMdDownload } from "react-icons/io";
+import MouseScrollIcon from "./ui/mouse-scroll";
 
 /* ================= Note =================
 
@@ -28,73 +29,31 @@ export default function Intro() {
       <section
         ref={ref}
         id="home"
-        className="mb-28 mx-0 sm:mb-0 scroll-mt-[100rem] relative"
+        className="relative px-4 md:grid md:min-h-screen md:place-items-center flex flex-col items-center mx-0 scroll-mt-[100rem] md:mb-28 "
       >
-        <div className="flex items-center justify-center">
-          <div className="relative ">
-            <motion.div
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                // tween is smooth non bouncing animation.
-                type: "tween",
-                duration: 0.2,
-              }}
-            >
-              {/* <Image
-              src="/profile-picture.jpg"
-              alt="Jake Jeong's Portrait picture"
-              width="500"
-              height="500"
-              quality="95"
-              priority={true}
-              className="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
-            /> */}
-
-              {/* <motion.span
-            className="absolute bottom-0 right-0 text-1xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            // transition is optional but it's recommended to use it for better user experience.
-            transition={{
-              // spring is bouncy animation.
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span> */}
-            </motion.div>
-          </div>
-        </div>
-
-        <div className="mx-auto max-w-max">
+        <div className="mx-auto max-w-max justify-start">
           <motion.h1
-            className="items-baseline mt-[7rem] mb-[4rem] sm:mb-[2rem] text-2xl font-medium !leading-[1.5] sm:text-4xl"
+            className="pt-40 sm:pt-60 md:pt-10 lg:pt-24 flex justify-center items-center flex-col font-medium !leading-[1.5] sm:flex-nowrap sm:flex-row sm:items-baseline"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeOut" }}
           >
-            <p className="md:flex-row md:justify-between sm:items-baseline text-zinc-800 text-center  text-4xl font-bold">
-              <span className="font-extrabold tracking-tight leading-10 text-4xl sm:text-8xl text-zinc-100 dark:text-gray-950 sm:mb-2 z-10 sm:pr-3 text-nowrap">
-                Jake Jeong
-              </span>
-              <span className="tracking-wide font-semibold text-lg sm:text-2xl md:pr-44 leading-1 text-zinc-600 sm:pl-3">
-                A Full-Stack Developer
-              </span>
-            </p>
+            <span className="text-5xl sm: font-extrabold tracking-tight leading-10 sm:text-5xl md:text-6xl lg:text-8xl text-zinc-100 dark:text-gray-950 sm:mb-2 z-10 sm:px-1 pb-1 sm:pb-0">
+              Jake Jeong
+            </span>
+            <span className="pb-3 sm:pb-0 text-md tracking-wide font-semibold leading-1 text-zinc-600 sm:px-1 sm:text-xl">
+              A Full-Stack Developer
+            </span>
           </motion.h1>
 
-          <div className="flex justify-end pb-5">
+          <div className="flex justify-end">
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeOut", delay: 0.05 }}
-              className="border-zinc-500 sm:w-2/3 sm:border-l-4"
+              className="border-zinc-500 sm:w-2/3 mx-auto md:mx-0 md:w-2/3 sm:border-l-4 mb-4 md:mb-4 "
             >
-              <p className="py-2 pl-8 text-xl font-extralight text-zinc-200 dark:text-slate-300">
+              <p className="text-sm px-5 text-center sm:text-start sm:px-2 xs:px-0 sm:pl-4 text-md md:text-lg font-thin text-white opacity-90 dark:text-slate-300">
                 Hi there! I build modern websites that follow latest trends and
                 technologies. I am based in{" "}
                 <span className="font-normal">California</span>,{" "}
@@ -102,29 +61,62 @@ export default function Intro() {
               </p>
             </motion.div>
           </div>
+
+          <motion.div
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium pb-36 md:pb-0 text-white/50"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            <div className="flex items-center justify-between gap-3 ">
+              <a
+                href="https://www.linkedin.com/in/jake-jeong-801438148/"
+                target="_blank"
+                className="text-[2.4rem]"
+              >
+                <BsLinkedin />
+              </a>
+              <a
+                href="https://github.com/JakeJeongAiden"
+                target="_blank"
+                className="text-[2.7rem]"
+              >
+                <FaGithubSquare />
+              </a>
+            </div>
+            <Link
+              href="#contact"
+              className="group text-[0.9rem] h-[3rem] w-[9rem] bg-cyan-300/60 text-white px-6 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-yellow-300/50 active:scale-105 transition text-nowrap"
+              onClick={() => {
+                setActiveSection("Contact");
+                setTimeOfLastClick(Date.now());
+              }}
+            >
+              Contact Me!
+              <PiPhoneDuotone className="group-hover:translate-x-1 transition" />
+            </Link>
+            <a
+              // in nextjs you can use /public folder to store static files.
+              href="/cv-a.pdf"
+              download
+              className="group text-[0.9rem]  flex items-center justify-center gap-2 h-[3rem] w-[9rem] bg-cyan-300/60 text-white rounded-lg outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-slate-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
+            >
+              Resume
+              <HiDownload className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </a>
+          </motion.div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="flex flex-col sm:flex-row justify-center gap-3 px-4 text-lg font-medium"
-        >
-          <Link
-            href="#contact"
-            className="group bg-cyan-300/60 text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-yellow-300/50 active:scale-105 transition"
-            onClick={() => {
-              setActiveSection("Contact");
-              setTimeOfLastClick(Date.now());
-            }}
+        <a href="#about">
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="absolute bottom-2 transform -translate-x-1/2 animate-bounce hidden md:block"
           >
-            Contact Me!
-            <PiPhoneDuotone className="group-hover:translate-x-1 transition" />
-          </Link>
-          {/* Using anchor tag because we are downloading something */}
-        </motion.div>
-
-        <div className="text-white left-1/2"></div>
+            <MouseScrollIcon />
+          </motion.div>
+        </a>
       </section>
     </>
   );
