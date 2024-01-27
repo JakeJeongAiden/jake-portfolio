@@ -1,14 +1,13 @@
+"use client";
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 
-const buttonClassname = `
-fixed bottom-5 right-5 bt-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all
-`;
-
 export default function SocialButtons() {
+  const [pending, setPending] = React.useState(false);
   return (
-    <div className="fixed flex bottom-7 right-8 items-center gap-3  text-cyan-100/70">
+    // Make button appear in about page.
+    <div className="hidden sm:fixed sm:flex bottom-7 right-8 items-center gap-3  text-cyan-100/70">
       {/* Using anchor tag because we are navigating to actual link */}
 
       <a

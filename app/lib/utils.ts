@@ -1,6 +1,9 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
+//clsx combines all inputted class names and returns a single string as output.
+//twMerge combine tailwind class names with other class names.
+//cn combines React and Tailwind class names together.
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
