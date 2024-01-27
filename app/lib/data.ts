@@ -39,7 +39,7 @@ export const experiencesData = [
     title: "Veteran",
     location: "U.S. Army",
     description:
-      "I was a combat medic specialist in the U.S. Army. I served for 18 months and honorably discharged from service.",
+      "I was a combat medic specialist in the U.S. Army. I conducted training sessions for non medical individuals. I served for 18 months and medically & honorably discharged from service due to a training accident.",
     icon: React.createElement(LuCross),
     date: "2017-2018",
   },
@@ -47,15 +47,15 @@ export const experiencesData = [
     title: "Bachelor of Arts Economics. University of California",
     location: "Riverside, CA",
     description:
-      "I have a bachelor of arts in Economics. I studied game theory, econometrics, stock market and financial analysis.",
+      "I have a bachelor of arts in Economics. I studied game theory, econometrics, stock market and financial analysis. My major required me to be proficient at calculus and statistics as well",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2023",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Software Engineer",
     location: "Irvine, CA",
     description:
-      "I'm now a full-stack developer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and PostgreSQL. I'm open to full-time opportunities.",
+      "I build Websites. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and PostgreSQL. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2023 - 2024",
   },
@@ -63,9 +63,9 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Anime Convention Event Demo",
+    title: "Anime Convention Event",
     description:
-      "Users can search for anime conventions and events in Southern California.",
+      "Users can search for anime conventions and events in Southern California. Data is fetched from a PostgreSQL database and can be updated by the admin.",
     tags: ["React", "Next.js", "PostgreSQL", "Tailwind", "Prisma"],
     imageUrl: animeEvent,
     projectUrl: "https://event-jake.vercel.app",
@@ -81,8 +81,8 @@ export const projectsData = [
   {
     title: "Word Analytics",
     description:
-      "lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Counts the number of texts & words in a text. This can be useful for social media influencer, writers and students.",
+    tags: ["React", "Tailwind", "JavaScript"],
     imageUrl: wordanalyticsImg,
     projectUrl: "https://event-jake.vercel.app",
   },

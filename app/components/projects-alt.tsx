@@ -16,7 +16,7 @@ export default function ProjectsAlt() {
   //Copy above ===============================
   return (
     <section ref={ref} id="projects" className="scroll-mt-[7rem] mb-28">
-      <SectionHeading>My Projects</SectionHeading>
+      <SectionHeading className="">My Projects</SectionHeading>
 
       <div
       //This is the wrapper for the Projects

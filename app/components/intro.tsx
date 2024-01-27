@@ -36,10 +36,10 @@ export default function Intro() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeOut" }}
           >
-            <span className="text-5xl sm: font-extrabold tracking-tight leading-10 sm:text-5xl md:text-6xl lg:text-8xl text-zinc-100 dark:text-gray-950 sm:mb-2 z-10 sm:px-1 pb-1 sm:pb-0">
+            <span className="text-5xl sm: font-extrabold tracking-tight leading-10 sm:text-5xl md:text-6xl lg:text-8xl text-zinc-100 dark:text-blue-400 sm:mb-2 z-10 sm:px-1 pb-1 sm:pb-0">
               Jake Jeong
             </span>
-            <span className="pb-3 sm:pb-0 text-md tracking-wide font-semibold leading-1 text-zinc-600 sm:px-1 sm:text-xl">
+            <span className="pb-3 sm:pb-0 text-md tracking-wide font-semibold leading-1 text-zinc-600 dark:text-zinc-200 sm:px-1 sm:text-xl">
               A Full-Stack Developer
             </span>
           </motion.h1>
@@ -51,7 +51,7 @@ export default function Intro() {
               transition={{ ease: "easeOut", delay: 0.05 }}
               className="border-zinc-500 sm:w-2/3 mx-auto md:mx-0 md:w-2/3 sm:border-l-4 mb-4 md:mb-4 "
             >
-              <p className="text-sm px-5 text-center sm:text-start sm:px-2 xs:px-0 sm:pl-4 text-md md:text-lg font-thin text-white opacity-90 dark:text-slate-300">
+              <p className="text-sm px-5 text-center sm:text-start sm:px-2 xs:px-0 sm:pl-4 text-md md:text-lg font-thin text-white opacity-90 dark:text-zinc-200">
                 Hi there! I build modern websites that follow latest trends and
                 technologies. I am based in{" "}
                 <span className="font-normal">California</span>,{" "}
@@ -70,21 +70,21 @@ export default function Intro() {
               <a
                 href="https://www.linkedin.com/in/jake-jeong-801438148/"
                 target="_blank"
-                className="text-[2.4rem]"
+                className="text-white/50 text-[2.4rem] focus:scale-110 hover:scale-110 hover:text-white/90 active:scale-105 transition"
               >
                 <BsLinkedin />
               </a>
               <a
                 href="https://github.com/JakeJeongAiden"
                 target="_blank"
-                className="text-[2.7rem]"
+                className="text-white/50 text-[2.7rem] hover:text-white/90 focus:scale-110 hover:scale-110  active:scale-105 transition"
               >
                 <FaGithubSquare />
               </a>
             </div>
             <Link
               href="#contact"
-              className="group text-[0.9rem] h-[3rem] w-[9rem] bg-cyan-300/60 text-white px-6 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-yellow-300/50 active:scale-105 transition text-nowrap"
+              className="group text-[0.9rem] h-[3rem] w-[9rem] bg-green-300/60 backdrop-blur-sm text-white px-5 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-green-300/90 active:scale-105 transition text-nowrap borderBlack"
               onClick={() => {
                 setActiveSection("Contact");
                 setTimeOfLastClick(Date.now());
@@ -97,10 +97,11 @@ export default function Intro() {
               // in nextjs you can use /public folder to store static files.
               href="/cv-a.pdf"
               download
-              className="group text-[0.9rem]  flex items-center justify-center gap-2 h-[3rem] w-[9rem] bg-cyan-300/60 text-white rounded-lg outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-slate-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65"
+              className="group text-[0.9rem] px-5 py-3 flex items-center justify-center gap-2 h-[3rem] w-[9rem] bg-cyan-300/60 text-white rounded-lg outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-cyan-400 active:scale-105 dark:bg-opacity-50 disabled:scale-100 disabled:bg-opacity-65 borderBlack
+              backdrop-blur-sm"
             >
               Resume
-              <HiDownload className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <HiDownload className="text-xs opacity-70 transition-all group-hover:translate-x-1/2 group-hover:animate-bounce" />
             </a>
           </motion.div>
         </div>
@@ -110,7 +111,7 @@ export default function Intro() {
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="absolute bottom-2 transform -translate-x-1/2 animate-bounce hidden md:block"
+            className="absolute bottom-2 animate-bounce hidden md:block"
           >
             <MouseScrollIcon />
           </motion.div>
