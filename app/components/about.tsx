@@ -37,7 +37,7 @@ export default function About() {
           }}
         />
       </h2>
-      <div className="mx-2 sm:mx-10 px-10 py-10 flex flex-col items-center bg-zinc-800/30 justify-center border border-white/5 rounded-md backdrop-blur-sm">
+      <div className="mx-2 sm:mx-10 lg:mx-36 px-10 py-10 flex flex-col items-center bg-zinc-800/30 justify-center border border-white/5 rounded-md backdrop-blur-sm">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -58,17 +58,13 @@ export default function About() {
           />
         </motion.div>
 
-        <p className="py-2 mb-3 mt-7 font-light bg-zinc-200/90 mx-10 backdrop-blur-sm border-black/10 rounded-xl">
-          Hello, I&rsquo;m Jake. I&rsquo;m a{" "}
-          <span className="font-normal">full-stack software developer</span>{" "}
-          with a background in economics and finances. I've always been
-          passionate about technology and how it can be used to improve our
-          lives. I can create modern and responsive websites and applications
-          using the latest technologies.
-        </p>
-        <p className="mb-3 mt-7 font-light bg-white/90 mx-10 backdrop-blur-sm ">
-          I pay close attention to detail. I love creating enjoyable
-          interactions and experiences for everyone.{" "}
+        <p className="py-3 px-2 mb-3 mt-7 font-light bg-zinc-100/90 mx-10 backdrop-blur-sm border-black/10 rounded-xl text-pretty">
+          Hello, I&rsquo;m Jake! <br />
+          Im a software developer. I can create modern and responsive websites
+          and applications using the latest technologies. Coming from military
+          background, I can pay close attention to detail and work under heavy
+          pressure. I am a fast learner who sees great value in learning new
+          skills, not just for careers but also for personal growth.
         </p>
       </div>
     </motion.section>

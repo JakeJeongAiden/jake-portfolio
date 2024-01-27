@@ -110,8 +110,8 @@ const myFont = localFont({
 });
 
 export const metadata = {
-  title: "Jake J Portfolio",
-  description: "A Full-stack developer, designer, and musician.",
+  title: "Jake J | Portfolio",
+  description: "A Full-stack software developer in Orange County, CA.",
 };
 
 export default function RootLayout({
