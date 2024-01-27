@@ -9,9 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/app/lib/hooks";
 import { useActiveSectionContext } from "@/app/context/active-section-context";
-import { PiPhoneThin } from "react-icons/pi";
 import { Background } from "./background-particle";
-import { IoMdDownload } from "react-icons/io";
 import MouseScrollIcon from "./ui/mouse-scroll";
 
 /* ================= Note =================
@@ -33,7 +31,7 @@ export default function Intro() {
       >
         <div className="mx-auto max-w-max justify-start">
           <motion.h1
-            className="pt-40 sm:pt-60 md:pt-10 lg:pt-24 flex justify-center items-center flex-col font-medium !leading-[1.5] sm:flex-nowrap sm:flex-row sm:items-baseline"
+            className="pt-40 sm:pt-60 md:pt-30 lg:pt-40 flex justify-center items-center flex-col font-medium !leading-[1.5] sm:flex-nowrap sm:flex-row sm:items-baseline"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ ease: "easeOut" }}
