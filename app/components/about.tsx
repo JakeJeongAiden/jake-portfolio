@@ -37,7 +37,7 @@ export default function About() {
           }}
         />
       </h2>
-      <div className="mx-2 sm:mx-10 lg:mx-36 px-10 py-10 flex flex-col items-center bg-zinc-800/30 justify-center border border-white/5 rounded-md backdrop-blur-sm">
+      <div className="mx-1 sm:mx-10 lg:mx-36 px-1 lg:px-10 py-10 flex flex-col items-center bg-zinc-800/30 justify-center border border-white/5 rounded-md backdrop-blur-sm">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -58,7 +58,7 @@ export default function About() {
           />
         </motion.div>
 
-        <p className="py-3 px-2 mb-3 mt-7 font-light bg-zinc-100/90 mx-10 backdrop-blur-sm border-black/10 rounded-xl text-pretty">
+        <p className="py-3 px-1 mb-3 mt-7 font-light bg-zinc-100/90 lg:mx-10 backdrop-blur-sm border-black/10 rounded-xl text-pretty">
           Hello, I&rsquo;m Jake! <br />
           Im a software developer. I can create modern and responsive websites
           and applications using the latest technologies. Coming from military
