@@ -55,7 +55,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Irvine, CA",
     description:
-      "I build Websites. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and PostgreSQL. I'm open to full-time opportunities.",
+      "I build Websites. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and PostgreSQL. I&apos;m open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2023 - 2024",
   },
