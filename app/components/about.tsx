@@ -61,9 +61,11 @@ export default function About() {
         <p className="py-3 sm:px-5 px-1 mb-2 mt-7 font-extralight bg-zinc-100/90 sm:mx-4 lg:mx-10 backdrop-blur-sm border-black/10 rounded-xl text-wrap dark:bg-zinc-900/80 dark:text-zinc-100/90">
           <span className="pb-3">Hello, I&rsquo;m Jake! </span>
           <br />
-          I'm a <span className="font-normal">software developer</span> with a
-          military background. I pursued my education after service and found a
-          passion for coding in college. I am a{" "}
+          I&apos;m a <span className="font-normal">
+            software developer
+          </span>{" "}
+          with a military background. I pursued my education after service and
+          found a passion for coding in college. I am a{" "}
           <span className="font-normal">fast learner</span> who sees great value
           in learning new skills, not just for careers but also for{" "}
           <span className="font-normal">personal growth</span>. I can create{" "}
