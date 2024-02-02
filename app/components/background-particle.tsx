@@ -38,10 +38,10 @@ export function Background() {
     () => ({
       fullScreen: {
         enable: false,
-        zIndex: -1,
+        zIndex: -2,
       },
       style: {
-        height: "150%",
+        height: "180%",
         width: "100%",
         position: "absolute",
       },
