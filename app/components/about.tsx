@@ -95,8 +95,8 @@ export default function About() {
           experiences in the military and as a full-stack developer uniquely
           position me to contribute effectively to your organization. I am eager
           to take on new challenges, drive innovation, and deliver impactful
-          results. Let's connect and explore how my background and skills align
-          with the needs of your team.
+          results. Let&apos;s connect and explore how my background and skills
+          align with the needs of your team.
         </div>
       </div>
     </motion.section>
