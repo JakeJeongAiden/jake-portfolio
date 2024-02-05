@@ -11,7 +11,7 @@ import { useFormStatus } from "react-dom";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 import ResumeBtn from "./resume-btn";
-import { BackgroundBeams, BackgroundBeamsDemo } from "./ui/background-beams";
+import { BackgroundBeams } from "./ui/background-beams";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact", 0.6);
