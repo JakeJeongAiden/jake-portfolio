@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
 import Image from "next/image";
+import { Meteors } from "./ui/meteor";
 
 export default function About() {
   const { ref } = useSectionInView("About", 0.5);
@@ -66,24 +67,23 @@ export default function About() {
         <div
           className="max-w-[1100px] py-8 sm:px-8 px-1 mb-2 mt-7 
         sm:rounded-tr-lg sm:rounded-bl-lg  md:rounded-tr-[100px] md:rounded-bl-[100px] sm:rounded-tl-lg sm:rounded-br-lg
-        font-extralight bg-zinc-100/90 sm:mx-4 lg:mx-10border-black/10 text-wrap dark:bg-zinc-900/80 dark:text-zinc-100/90 "
+        font-extralight bg-zinc-100/90 sm:mx-4 lg:mx-10border-black/10 text-wrap dark:bg-zinc-900/80 dark:text-zinc-100/90 relative h-full overflow-hidden"
         >
           <span className="font-semibold text-lg text-zinc-500 pb-9">
             Hello, I&rsquo;m Jake!{" "}
           </span>
           <br />
-          I&apos;m a highly motivated{" "}
+          I&apos;m a motivated{" "}
           <span className="font-normal">software developer</span> and U.S. Army{" "}
           <span className="font-normal">veteran</span> with a bachelor&apos;s
           degree in economics. My journey has equipped me with a unique blend of{" "}
           <span className="font-normal">analytical thinking</span>,
-          <span className="font-normal">adaptability</span>, and a{" "}
-          <span className="font-normal">strong work ethic</span>. Transitioning
-          into the software industry, I became a self-taught full-stack
-          developer with a passion for innovation and a love for learning. I am
-          a versatile professional capable of navigating complex challenges. I
-          can deliver projects that showcase my proficiency in both front-end
-          and back-end technologies.
+          <span className="font-normal">versatility</span>, and a{" "}
+          <span className="font-normal">strong work ethic</span>. I saw a
+          promising future in the tech industry and decided to learn software
+          development on my own. I quickly discovered my passion for coding and
+          since then I have been honing my ability to create full stack
+          applications.
           <br />
           What sets me apart is not only my technical expertise but also my
           commitment to continuous learning. I embrace new technologies with
@@ -97,6 +97,7 @@ export default function About() {
           to take on new challenges, drive innovation, and deliver impactful
           results. Let&apos;s connect and explore how my background and skills
           align with the needs of your team.
+          <Meteors number={20} className="0.5" />
         </div>
       </div>
     </motion.section>
