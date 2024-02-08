@@ -65,7 +65,7 @@ export function Background() {
           },
           onHover: {
             enable: true,
-            mode: "grab",
+            mode: "connect",
 
             //disabled till I can figure out how to make it work with the parallax effect
             // parallax: {
@@ -106,7 +106,7 @@ export function Background() {
           enable: true,
         },
         color: {
-          value: ["#64748B", "#44403C", "#93C5FD"],
+          value: ["#64748B", "#e0a4d2", "#93C5FD", "#e0a4d2"],
         },
         effect: {
           close: true,
@@ -114,7 +114,7 @@ export function Background() {
         },
         links: {
           color: "#333",
-          distance: 150,
+          distance: 300,
           enable: false,
           opacity: 0.3,
           width: 0.7,
@@ -131,9 +131,9 @@ export function Background() {
         number: {
           density: {
             enable: true,
-            area: 300,
+            area: 100,
           },
-          value: 200,
+          value: 275,
         },
         opacity: {
           value: 0.8,
@@ -146,8 +146,14 @@ export function Background() {
           },
         },
         shape: {
-          type: ["circle"],
+          type: ["polygon", "circle", "square"],
+          options: {
+            polygon: {
+              sides: 3,
+            },
+          },
         },
+
         size: {
           value: { min: 2, max: 3 },
           random: true,

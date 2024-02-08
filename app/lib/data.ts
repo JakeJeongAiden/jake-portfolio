@@ -6,6 +6,7 @@ import { LuGraduationCap, LuCross } from "react-icons/lu";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import animeEvent from "@/public/anime-event.png";
+import odinLibrary from "@/public/odin-library.png";
 
 export const links = [
   {
@@ -85,6 +86,14 @@ export const projectsData = [
     tags: ["React", "Tailwind", "JavaScript"],
     imageUrl: wordanalyticsImg,
     projectUrl: "https://event-jake.vercel.app",
+  },
+  {
+    title: "Odin Library",
+    description:
+      "No framework used. This is a library app that allows users to add, delete and update books. Data is stored in local storage.",
+    tags: ["HTML", "CSS", "Javascript"],
+    imageUrl: odinLibrary,
+    projectUrl: "https://jakejeongaiden.github.io/library",
   },
 ] as const;
 

@@ -73,10 +73,10 @@ export default function About() {
             Hello, I&rsquo;m Jake!{" "}
           </span>
           <br />
-          I&apos;m a motivated{" "}
-          <span className="font-normal">software developer</span> and U.S. Army{" "}
-          <span className="font-normal">veteran</span> with a bachelor&apos;s
-          degree in economics. My journey has equipped me with a unique blend of{" "}
+          I&apos;m a <span className="font-normal">software developer</span> and
+          U.S. Army <span className="font-normal">veteran</span> with a
+          bachelor&apos;s degree in economics. My journey has equipped me with a
+          unique blend of{" "}
           <span className="font-normal">analytical thinking</span>,
           <span className="font-normal">versatility</span>, and a{" "}
           <span className="font-normal">strong work ethic</span>. I saw a
