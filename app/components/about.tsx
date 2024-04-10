@@ -97,7 +97,6 @@ export default function About() {
           to take on new challenges, drive innovation, and deliver impactful
           results. Let&apos;s connect and explore how my background and skills
           align with the needs of your team.
-          <Meteors number={20} className="0.5" />
         </div>
       </div>
     </motion.section>

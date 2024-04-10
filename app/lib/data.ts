@@ -72,12 +72,12 @@ export const projectsData = [
     projectUrl: "https://event-jake.vercel.app",
   },
   {
-    title: "rmtDev",
+    title: "The Odin Library",
     description:
-      "lorem  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-    projectUrl: "https://event-jake.vercel.app",
+      "No framework used. This is a pure javascript library app that allows users to add, delete and update books. Data is stored in local storage.",
+    tags: ["HTML", "CSS", "Javascript"],
+    imageUrl: odinLibrary,
+    projectUrl: "https://jakejeongaiden.github.io/library",
   },
   {
     title: "Word Analytics",
@@ -86,14 +86,6 @@ export const projectsData = [
     tags: ["React", "Tailwind", "JavaScript"],
     imageUrl: wordanalyticsImg,
     projectUrl: "https://event-jake.vercel.app",
-  },
-  {
-    title: "Odin Library",
-    description:
-      "No framework used. This is a library app that allows users to add, delete and update books. Data is stored in local storage.",
-    tags: ["HTML", "CSS", "Javascript"],
-    imageUrl: odinLibrary,
-    projectUrl: "https://jakejeongaiden.github.io/library",
   },
 ] as const;
 
