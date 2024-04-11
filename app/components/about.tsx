@@ -73,30 +73,16 @@ export default function About() {
             Hello, I&rsquo;m Jake!{" "}
           </span>
           <br />
-          I&apos;m a <span className="font-normal">software developer</span> and
-          U.S. Army <span className="font-normal">veteran</span> with a
-          bachelor&apos;s degree in economics. My journey has equipped me with a
-          unique blend of{" "}
-          <span className="font-normal">analytical thinking</span>,
-          <span className="font-normal">versatility</span>, and a{" "}
-          <span className="font-normal">strong work ethic</span>. I saw a
-          promising future in the tech industry and decided to learn software
-          development on my own. I quickly discovered my passion for coding and
-          since then I have been honing my ability to create full stack
-          applications.
+          I am looking for Software Intern position in Summer 2024. As a veteran
+          and recent graduate at University of California Riverside, I bring a
+          unique blend of discipline and teamwork skills. I have a strong
+          foundation for full stack development. I am proficient in React,
+          Next.js, TypeScript, Tailwind, Prisma, and PostgreSQL. I am excited to
+          leverage my skills and experience to contribute to a dynamic team. I
+          am eager to take on new challenges, drive innovation, and deliver
+          impactful results. Let&rsquo;s connect and explore how my background
+          and skills align with the needs of your team.
           <br />
-          What sets me apart is not only my technical expertise but also my
-          commitment to continuous learning. I embrace new technologies with
-          enthusiasm, staying abreast of industry trends and evolving
-          methodologies. I understand the importance of collaboration and thrive
-          in team environments where diverse perspectives contribute to
-          successful outcomes. I am excited about the opportunity to bring my
-          skills, dedication, and creative mindset to a dynamic team. My
-          experiences in the military and as a full-stack developer uniquely
-          position me to contribute effectively to your organization. I am eager
-          to take on new challenges, drive innovation, and deliver impactful
-          results. Let&apos;s connect and explore how my background and skills
-          align with the needs of your team.
         </div>
       </div>
     </motion.section>
