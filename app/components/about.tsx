@@ -23,7 +23,7 @@ export default function About() {
       scroll-mt-[7rem] w-full
       "
     >
-      <div className="w-full px- py-24 flex flex-col items-center bg-zinc-800/30 justify-center sm:border-t sm:border-b border-white/5  backdrop-blur-sm dark:bg-zinc-900/50 ">
+      <div className="w-full px-1 py-9 flex flex-col items-center bg-zinc-800/30 justify-center sm:border-t sm:border-b border-white/5  backdrop-blur-sm dark:bg-zinc-900/50 ">
         <h2 className="text-zinc-200 text-4xl font-bold capitalize mb-8 drop-shadow-md dark:text-zinc-100">
           <Typewriter
             options={{
@@ -72,16 +72,20 @@ export default function About() {
           <span className="font-semibold text-lg text-zinc-500 pb-9">
             Hello, I&rsquo;m Jake!{" "}
           </span>
-          <br />
-          I am looking for Software Intern position in Summer 2024. As a veteran
-          and recent graduate at University of California Riverside, I bring a
-          unique blend of discipline and teamwork skills. I have a strong
-          foundation for full stack development. I am proficient in React,
-          Next.js, TypeScript, Tailwind, Prisma, and PostgreSQL. I am excited to
-          leverage my skills and experience to contribute to a dynamic team. I
-          am eager to take on new challenges, drive innovation, and deliver
-          impactful results. Let&rsquo;s connect and explore how my background
-          and skills align with the needs of your team.
+          <br />I am looking for{" "}
+          <span className="font-light">
+            Software Intern position in Summer 2024
+          </span>
+          . As a <span className="font-light">veteran</span> and recent graduate
+          at{" "}
+          <span className="font-light">University of California Riverside</span>
+          , I bring a unique blend of discipline and teamwork skills. I have a
+          strong foundation for full stack development. I am proficient in
+          React, Next.js, TypeScript, Tailwind, Prisma, and PostgreSQL. I am
+          excited to leverage my skills and experience to contribute to a
+          dynamic team. I am eager to take on new challenges, drive innovation,
+          and deliver impactful results. Let&rsquo;s connect and explore how my
+          background and skills align with the needs of your team.
           <br />
         </div>
       </div>
