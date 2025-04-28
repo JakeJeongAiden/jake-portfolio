@@ -1,6 +1,6 @@
 import Intro from "@/app/components/intro";
 import SectionDivider from "@/app/components/section-divider";
-import About from "@/app/components/about";
+import Service from "@/app/components/about";
 import Projects from "@/app/components/projects";
 import ProjectsAlt from "@/app/components/projects-alt";
 import Skills from "@/app/components/skills";
@@ -15,7 +15,7 @@ export default function Home() {
     >
       <Intro />
 
-      <About />
+      <Service />
 
       <ProjectsAlt />
       <Skills />

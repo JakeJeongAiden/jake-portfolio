@@ -3,14 +3,13 @@ import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/app/lib/hooks";
 import Image from "next/image";
-import { Meteors } from "./ui/meteor";
 
-export default function About() {
-  const { ref } = useSectionInView("About", 0.5);
+export default function Service() {
+  const { ref } = useSectionInView("Services", 0.5);
 
   return (
     <motion.section
-      id="about"
+      id="services"
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
